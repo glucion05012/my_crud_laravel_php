@@ -1,0 +1,10 @@
+#footer{
+	margin-top: 30px;
+	padding: 10px;
+	color: white;
+	background: gray;
+}
+
+#footer p{
+	margin-bottom: 0px;
+}
