@@ -8,7 +8,7 @@ use App\Article;
 class CreatesController extends Controller
 {
     public function home(){
-    	$articles = Article::all();
+		$articles = Article::all();
     	return view('home', ['articles'=> $articles]);
 
 
@@ -17,7 +17,7 @@ class CreatesController extends Controller
     public function add(Request $request){
     	
     	$this->validate($request, [
-    		'title' => 'required',
+    		'title' => 'required|min:4',
     		'description' => 'required'
     	]);
 
